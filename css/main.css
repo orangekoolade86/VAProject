@@ -1,0 +1,239 @@
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	border: 1px solid #c79852;
+	margin: 3% auto;
+	width: 7%;}
+
+
+nav {margin: 0 1%;
+	padding: 1% 5%}
+
+/*positions nav elements to be horizontal
+*/
+nav div {display:inline-block;}
+
+/*stye of tests on nev bar*/
+nav> div >a {color: black;
+		   font-size: 16px;
+		   font-weight: bold;
+		   text-decoration: none;}
+
+/*positions visual arts and search bar. last child of elements within the div*/
+nav>div:last-child {float: right;}
+
+/*border around magnifying glass search bar*/
+nav input {border: solid: grey;}
+
+section {padding-bottom: 50px}
+
+/*positioning of all elements inside the header*/
+header {margin: 0 auto;
+		text-align: center;
+		width: 80%;}
+
+/*border radius changed edes on the photo making it look circular. height & width cahnges shape*/
+header img {border-radius: 50%;
+			height: 80px;
+			width:88px;}
+
+/*stye of contents inside the h1 element withing the header*/
+header h1 {
+	color: orange;
+	font-family: cursive;
+	font-size: 60px;
+/*spacing of all letters in the h1 element inside the header*/
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin: 1% 0;}
+
+/*style contents of h2 inside the header*/
+header h2 {
+	color:black;
+	font-size: 20px;
+	/*setsthickness and thiness of characters*/
+	font-weight: bold;
+	margin: 5% 0 3%;
+	}
+/*Font style of the paragraph element in side the header "Noah Andrews*/
+header p {
+	font-size: 16px;
+	margin: 3% 0;}
+
+/*positining of the divs within the section*/
+section div {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;}
+
+
+section div p {
+	color: #565656;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 0 15%;
+	margin: 3% 0;
+	text-align: left;}
+
+/*text styling of the personal quote class*/
+.personal-quote {
+	color:orange;
+	font-family: 'Petit Formal Script', cursive;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 36px;
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;}
+
+
+/*positions the height of the class img-wrap so that the image does not overflow the text*/
+.img-wrap {
+	height: 450px;
+}
+
+/*positions the class img-wrap so that it creates on big square
+*/
+
+.img-wrap img {
+	float: left;
+}
+/*positions img:first child element; with the class of img-wrapinside the class img-wrap*/
+.img-wrap img:first-child {
+	
+	margin-left: 0%;}
+
+/*spaces the two non first child images to the left of the first child image*/
+.img-wrap img:nth-child(n+2) {
+	
+	margin-left: 7px;
+}
+/*creates spacing on the top of the third photo from the images within the class of .img-wrap*/
+
+.img-wrap img:last-child {
+	
+	margin-top: 7px;}
+
+/*positions the "describe yourself" box*/
+
+section > footer {
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+}
+/*color of the number of likes*/
+section > footer > div {
+	color: blue;
+}
+
+/*changes the color of the heart symbol. Also spaces away from the "describe yourself" box*/
+footer .fa-heart {
+	color: pink;
+	margin-bottom: 3%;
+}
+/*/*
+/*styling of the "decribe yourself box"*/
+
+footer textarea {
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid black;
+	border-color: grey;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	color: #555;
+    font-size: 14px;
+    line-height: 1.42857143;
+	padding: 6px 12px;
+	width: 100%;
+}
+
+/*alignment of the button-group class*/
+.button-group {
+	text-align: left;
+}
+
+/*sets styling of the button group class within the button element*/
+.button-group button {
+	border: none;
+    background: white;
+    color: #565656;
+    font-size: 12px;
+    padding: 0 5px 0 0;
+}
+
+/*positions the last button group "POST COMMENT" to the left*/
+.button-group button:last-child{
+	float: right;
+	padding: 0;
+}
+
+/*creates a hover effect on the button groups makes the cursor a hand*/
+.button-group button:hover {
+	color: #5e5e5e;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+
+/*adds styling to the contents of the body within the footer*/
+body footer {
+	background: #F8F9FD;
+	height: 200px;
+	padding: 0 20%;
+	position: relative;
+}
+
+/*adds styling to the class of .previous-article & next-article class*/
+.previous-article,
+.next-article {
+	display: inline-block;
+	position: relative;
+	width: 50%;}
+
+/*positions the .previous article class*/
+.previous-article {
+	left: 20%;
+	position: absolute;
+}
+
+/*positions the .previous-button class*/
+.previous-button {
+	text-align: left;
+}
+
+/*positions the .next-article class*/
+.next-article {
+	position: absolute;
+	right: 20%;
+}
+
+/*alignment of the next button*/
+.next-button {
+	text-align: right;
+}
+
+/*spaces out the next article & previous article button*/
+.previous-button,
+.next-button {
+	margin: 10% 0;
+}
+
+/*adds style to the text of the buttons*/
+.previous-button a,
+.next-button a {
+	color: orange;
+	font-weight: bold;
+	margin: 3% 0;
+	text-decoration: none;
+}
+
+/*spaces out the button from the contents below them on the page*/
+.previous-button p,
+.next-button p {
+	font-weight: normal;
+	margin: 3% 0;
+}
